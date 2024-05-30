@@ -16,21 +16,21 @@ export function numberWithCommas(x) {
 
 export const CoinList = () => {
     const [trending, setTrending] = useState([]);
-    const {currency, symbol} = CryptoState();
+    // const {currency, symbol} = CryptoState();
+    //
+    // const fetchTrendCoin = async () => {
+    //     try {
+    //         const {data} = await axios.get(TrendingCoins(currency));
+    //         setTrending(data);
+    //     } catch (error) {
+    //         console.error("Error fetching trending coins:", error);
+    //
+    //     }
+    // };
 
-    const fetchTrendCoin = async () => {
-        try {
-            const {data} = await axios.get(TrendingCoins(currency));
-            setTrending(data);
-        } catch (error) {
-            console.error("Error fetching trending coins:", error);
-
-        }
-    };
-
-    useEffect(() => {
-        fetchTrendCoin();
-    }, [currency]);
+    // useEffect(() => {
+    //     fetchTrendCoin();
+    // }, [currency]);
 
     return (
         <div className="row">
