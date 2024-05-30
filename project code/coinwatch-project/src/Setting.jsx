@@ -41,30 +41,7 @@ export function Setting({toggleDarkMode ,darkMode}) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12">
-                                    <div className="extension-card">
-                                        <div className="settings-item-card">
-                                            <div className="settings-item-key">
-                                                <div className="setting-item-icon">
-                                                    <i className="fa-solid fa-dollar-sign"></i>
-                                                </div>
-                                                <h3>
-                                                    Quotes Currency
-                                                </h3>
-                                            </div>
-                                            <div className="settings-item-value">
-                                                <select className="form-select quotes-currency-select" aria-label="Default select example"
-                                                        value={currency}
-                                                        onChange={(e) => setCurrency(e.target.value)}
-                                                >
-                                                    <option  value={'USD'}>USD</option>
-                                                    <option value={'EUR'}>EUR</option>
-
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                             
                             </div>
                         </div>
                     </section>
