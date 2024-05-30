@@ -1,15 +1,15 @@
 
 
-import React, { useEffect, useState } from 'react';
+import  {  useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { SingleCoin, TrendingCoins } from "../config/api.jsx";
+import {  TrendingCoins } from "../config/api.jsx";
 import "./destination/seachstyle.css"
 
 export const SearchBar = ({ currency ,darkMode}) => {
     const [query, setQuery] = useState('');
     const [coins, setCoins] = useState([]);
-    const [noResults, setNoResults] = useState(false); // State to track no results
+    const [noResults, setNoResults] = useState(false);
 
 
     const handleSearch = async (event) => {
@@ -17,12 +17,12 @@ export const SearchBar = ({ currency ,darkMode}) => {
         setQuery(newQuery);
         if (newQuery.length > 2) {
             const response = await axios.get(`https://api.coingecko.com/api/v3/search?query=${newQuery}`);
-            const fetchedCoins = response.data.coins; // Fetch all results
+            const fetchedCoins = response.data.coins;
             setCoins(fetchedCoins);
-            setNoResults(fetchedCoins.length === 0); // Update noResults state
+            setNoResults(fetchedCoins.length === 0);
         } else {
             setCoins([]);
-            setNoResults(false); // Reset noResults state
+            setNoResults(false);
         }
         const fetchTrendCoin = async () => {
             try {
@@ -30,7 +30,7 @@ export const SearchBar = ({ currency ,darkMode}) => {
                 setTrending(data);
             } catch (error) {
                 console.error("Error fetching trending coins:", error);
-                // You might want to handle errors here, such as displaying an error message to the user.
+
             }
         };
     };
