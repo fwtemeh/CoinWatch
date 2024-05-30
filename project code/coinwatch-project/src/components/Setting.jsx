@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom";
-import {CryptoState} from "../CryptoContext.jsx";
+
 
 export function Setting({toggleDarkMode ,darkMode}) {
     let navigate = useNavigate();

@@ -1,5 +1,5 @@
 import { TickerTape } from "react-ts-tradingview-widgets";
-import {useEffect, useState} from "react";
+
 
 export function Tickertapewidget({ darkMode }) {
     const colorTheme=darkMode ? "dark" : "light";
