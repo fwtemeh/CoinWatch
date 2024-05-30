@@ -1,8 +1,8 @@
 
 
 
-import axios from "axios";
-import { TrendingCoins } from "../config/api.jsx";
+// import axios from "axios";
+// import { TrendingCoins } from "../config/api.jsx";
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
