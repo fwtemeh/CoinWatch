@@ -18,7 +18,7 @@ export function Timelinewidget ({ darkMode }) {
 
     useEffect(() => {
         fetchCoin();
-    
+
     }, []);
 
 
