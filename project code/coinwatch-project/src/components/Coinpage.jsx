@@ -1,7 +1,7 @@
 
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { CryptoState } from "../CryptoContext.jsx";
+
 import { SingleCoin } from "../config/api.jsx";
 import axios from "axios";
 import DOMPurify from 'dompurify';
