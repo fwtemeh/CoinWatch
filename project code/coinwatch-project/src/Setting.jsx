@@ -41,7 +41,7 @@ export function Setting({toggleDarkMode ,darkMode}) {
                                         </div>
                                     </div>
                                 </div>
-                             
+
                             </div>
                         </div>
                     </section>
