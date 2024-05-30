@@ -1,58 +1,4 @@
-/*
-import { SymbolOverview} from "react-ts-tradingview-widgets";
-function  Coinchart()  {
-    const styles: copyrightStyles = {
-        parent: {
-            display:'none',
 
-        },
-        link: {
-            display:'none',
-        },
-
-        span:{
-            display:'none',
-        }
-
-
-    };
-
-        return (
-
-    <SymbolOverview colorTheme="dark"
-                    symbols="BTCUSD"
-
-                    width="100%"
-                    height="400"
-                    chartOnly={true}
-
-                    isTransparent={true}
-
-                    scalePosition='left'
-                    ScaleMode="Normal"
-                    chartType="Bars"
-
-                    ScalePosition='left'
-
-
-
-                    lineWidth='2'
-
-                    lineColor='#089981'
-                    timeHoursFormat='24-hours'
-                     // hideDateRanges={true}
-                    copyrightStyles={styles}
-
-
-           //         widgetFontColor='rgba(34, 171, 148, 1)'
-//bottomColor='rgba(34, 171, 148, 1)'
-
-    />
-        );
-}
-
-
-export default Coinchart;*/
 import { SymbolOverview } from "react-ts-tradingview-widgets";
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
@@ -74,7 +20,7 @@ function Coinchart({ darkMode }) {
 
     useEffect(() => {
         fetchCoin();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, []);
 
 
@@ -105,7 +51,7 @@ function Coinchart({ darkMode }) {
                 lineColor="#089981"
                 timeHoursFormat="24-hours"
                
-                // hideDateRanges={true}
+
             />
         </div>
     );
