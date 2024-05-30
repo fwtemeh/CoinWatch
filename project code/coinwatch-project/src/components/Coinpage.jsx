@@ -50,7 +50,7 @@ export const Coinpage = ({ darkMode }) => {
     };
 
     let profit = coin?.market_data.price_change_percentage_24h >= 0;
-   
+
 
     return (
         <div className={`coin-page ${darkMode ? "dark-mode" : ""}`}>
