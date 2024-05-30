@@ -1,0 +1,131 @@
+/*! Dark Mode Starts */
+
+
+/* body.body_dark 
+
+.extension-input {
+  background-color: #2C2D31 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px 0px 0px 10px !important;
+} 
+
+.extension-input:disabled {
+  background-color: #565656 !important;
+  color: #ababab !important;
+}
+*/
+
+
+body.body_dark .extension-wrapper {
+    background-color: var(--dark-bg-color);
+}
+
+body.body_dark .extension-card {
+    background-color: var(--dark-card-bg-color);
+    box-shadow: unset;
+}
+
+body.body_dark .container-fluid .section-header h2 {
+    color: var(--dark-heading-text-color);
+}
+
+body.body_dark header {
+    background-color: var(--dark-card-bg-color);
+}
+
+body.body_dark .header-wrapper a {
+    color: var(--dark-heading-text-color);
+}
+
+body.body_dark .extension-input {
+    background-color: var(--dark-card-bg-color) !important;
+    border: unset !important;
+}
+
+body.body_dark .extension-input:not(.extension-input[readonly]) {
+    color: var(--dark-form-color) !important;
+}
+
+body.body_dark .extension-input[readonly] {
+    background-color: var(--dark-form-color-disabled) !important;
+    color: #ababab !important;
+}
+
+body.body_dark .pinned-coin {
+    background-color: var(--dark-card-bg-color);
+}
+
+body.body_dark .pinned-coin .pinned-coin-abbreviation {
+    color: var(--dark-text-color);
+}
+
+body.body_dark .dropdown-menu {
+    background-color: var(--dark-card-bg-color) !important;
+}
+
+body.body_dark .dropdown-menu .dropdown-item {
+    color: var(--dark-text-color);
+}
+
+body.body_dark .coin-card .coin-profile .coin-information .coin-name {
+    color: var(--dark-heading-text-color);
+}
+
+body.body_dark .coin-card .coin-value .coin-price {
+    color: var(--dark-heading-text-color);
+}
+
+body.body_dark .coin-card .coin-profile .coin-information .coin-abbreviation {
+    color: var(--dark-text-color);
+}
+
+body.body_dark #top-5-coins .extension-card:hover {
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.2);
+}
+body.body_dark .coin-overview-summary {
+    color: var(--dark-text-color);
+}
+
+body.body_dark .coin-metrics-table li {
+    color: #f5f5f5;
+}
+
+body.body_dark #calculator i {
+    color: var(--dark-heading-text-color)
+}
+
+body.body_dark .settings-item-card {
+    color: var(--dark-text-color);
+}
+
+body.body_dark .settings-item-card .settings-item-key .setting-item-icon i {
+    background: var(--dark-text-color);
+    color: var(--dark-bg-color);
+}
+
+body.body_dark .form-select.quotes-currency-select {
+    background-color: var(--dark-text-color);
+    color: var(--dark-bg-color);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%231D1E22' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+body.body_dark .slider {
+    background-color: var(--dark-text-color);
+}
+
+body.body_dark .slider:before {
+    background-color: var(--dark-bg-color);
+}
+
+
+body.body_dark .fixed-ticker-tape {
+    background-color: var(--dark-card-bg-color);
+}
+
+body.body_dark .copy-right {
+    background-color: var(--dark-card-bg-color);
+    color: var(--dark-text-color)
+}
+
+/*! Dark Mode Ends*/

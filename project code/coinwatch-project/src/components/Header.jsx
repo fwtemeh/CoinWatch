@@ -1,4 +1,3 @@
-// import React, { Component } from 'react'
 
 import './destination/Styles/style.css'
 import './destination/Bootstrap/css/bootstrap.min.css'

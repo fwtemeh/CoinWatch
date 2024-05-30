@@ -1,0 +1,30 @@
+/* styles.css */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .form-control {
+    background-color: #2C2D31;
+    color: #ffffff;
+}
+
+.dark-mode .appended-input-btn {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.dark-mode .list-group-item {
+    background-color: #2C2D31;
+    color: #ffffff;
+}
+
+.dark-mode .list-group-item a {
+    color: #ffffff;
+}
+
+.dark-mode .input-group-append button {
+    background-color: #444444;
+    color: #ffffff;
+}
