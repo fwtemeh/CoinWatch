@@ -21,7 +21,7 @@ export const Coinpage = ({ darkMode }) => {
     const [coin, setCoin] = useState();
     const [isPinned, setIsPinned] = useState(false);
     let navigate = useNavigate();
-    const { currency, symbol } = CryptoState();
+    const { currency, symbol } = useState('usd');
 
     const fetchCoin = async () => {
         const { data } = await axios.get(SingleCoin(id));
@@ -50,7 +50,7 @@ export const Coinpage = ({ darkMode }) => {
     };
 
     let profit = coin?.market_data.price_change_percentage_24h >= 0;
-    let sym = currency.toLowerCase();
+   
 
     return (
         <div className={`coin-page ${darkMode ? "dark-mode" : ""}`}>
@@ -99,7 +99,7 @@ export const Coinpage = ({ darkMode }) => {
                                     </div>
                                     <div className="coin-value col-">
                                         <h3 className="coin-price">
-                                            ${numberWithCommas(coin?.market_data.current_price[sym])}
+                                            ${numberWithCommas(coin?.market_data.current_price.usd)}
                                         </h3>
                                         <span className={`coin-change ${profit ? "bullish" : "bearish"}`}>
                                             {profit ? "+" : ""}{coin?.market_data.price_change_percentage_24h?.toFixed(2)}%

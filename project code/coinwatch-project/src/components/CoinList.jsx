@@ -1,8 +1,8 @@
 
 
 
-// import axios from "axios";
-// import { TrendingCoins } from "../config/api.jsx";
+import axios from "axios";
+import { TrendingCoins } from "../config/api.jsx";
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -16,21 +16,21 @@ export function numberWithCommas(x) {
 
 export const CoinList = () => {
     const [trending, setTrending] = useState([]);
-    // const {currency, symbol} = CryptoState();
-    //
-    // const fetchTrendCoin = async () => {
-    //     try {
-    //         const {data} = await axios.get(TrendingCoins(currency));
-    //         setTrending(data);
-    //     } catch (error) {
-    //         console.error("Error fetching trending coins:", error);
-    //
-    //     }
-    // };
+    const {currency, symbol} = useState('usd');
 
-    // useEffect(() => {
-    //     fetchTrendCoin();
-    // }, [currency]);
+    const fetchTrendCoin = async () => {
+        try {
+            const {data} = await axios.get(TrendingCoins(currency));
+            setTrending(data);
+        } catch (error) {
+            console.error("Error fetching trending coins:", error);
+
+        }
+    };
+
+    useEffect(() => {
+        fetchTrendCoin();
+    }, [currency]);
 
     return (
         <div className="row">
