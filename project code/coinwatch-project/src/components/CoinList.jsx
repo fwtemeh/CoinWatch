@@ -3,7 +3,7 @@
 
 import axios from "axios";
 import { TrendingCoins } from "../config/api.jsx";
-import { CryptoState } from "../CryptoContext.jsx";
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Sparklines, SparklinesLine } from 'react-sparklines';
