@@ -1,8 +1,8 @@
 
 import { Timeline } from "react-ts-tradingview-widgets";
 import {useEffect, useState} from "react";
-import {useNavigate, useParams} from "react-router-dom";
-import {CryptoState} from "../CryptoContext.jsx";
+import { useParams} from "react-router-dom";
+
 import axios from "axios";
 import {SingleCoin} from "../config/api.jsx";
 export function Timelinewidget ({ darkMode }) {
@@ -18,7 +18,7 @@ export function Timelinewidget ({ darkMode }) {
 
     useEffect(() => {
         fetchCoin();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+    
     }, []);
 
 
