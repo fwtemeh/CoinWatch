@@ -32,7 +32,7 @@ export const Mainpage = ({darkMode}) =>{
 
                         <TradingViewWidget darkMode={darkMode} />
 
-                        {/*<Widget/>*/}
+
 
                     </div>
                 </section>

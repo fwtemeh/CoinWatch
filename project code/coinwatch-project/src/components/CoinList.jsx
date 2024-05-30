@@ -20,7 +20,7 @@ export const CoinList = () => {
 
     const fetchTrendCoin = async () => {
         try {
-            const {data} = await axios.get(TrendingCoins(currency));
+            const {data} = await axios.get(TrendingCoins('usd'));
             setTrending(data);
         } catch (error) {
             console.error("Error fetching trending coins:", error);

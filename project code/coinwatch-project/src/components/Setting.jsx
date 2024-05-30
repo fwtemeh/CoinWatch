@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 
 export function Setting({toggleDarkMode ,darkMode}) {
     let navigate = useNavigate();
-    
+
 
 
 
