@@ -87,7 +87,10 @@ export const Coinpage = ({ darkMode }) => {
                                 <div className="coin-card">
                                     <div className="coin-profile col-7">
                                         <div className="coin-icon">
-                                            <img src={coin?.image.large} alt={coin?.name} className="img-fluid" />
+
+                                            <a href={`https://www.coingecko.com/en/coins/${id}`}>
+                                                <img src={coin?.image.large} alt={coin?.name} className="img-fluid" />
+                                            </a>
                                         </div>
                                         <div className="coin-information">
                                             <h2 className="coin-name">{coin?.name}</h2>
