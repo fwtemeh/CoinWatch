@@ -42,7 +42,7 @@ Meet the awesomes who have contributed to the development of [CoinWatch]:
 
 | Name                | GitHub                                   | Contribution Role                   |
 |---------------------|------------------------------------------|-------------------------------------|
-| Omid Shamsi         | <https://github.com/Omid-Shamsi>         | UI/UX Designer                      |
+| Omid Shamsi         | <https://github.com/Omid-Shamsi>         | UI/UX Designer/Frontend Developer   |
 | Mohammad Askari     | <https://github.com/mohamad-askri>       | Frontend Developer                  |
 
 
