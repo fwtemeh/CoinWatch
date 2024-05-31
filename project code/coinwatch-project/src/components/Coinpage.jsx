@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { SingleCoin } from "../config/api.jsx";
 import axios from "axios";
 import DOMPurify from 'dompurify';
-import Coinchart from './Coinchart.jsx';
+import {Coinchart} from './Coinchart.jsx';
 import { Timelinewidget } from "./Timelinewidget.jsx";
 import { Calculator } from "./Calculator.jsx";
 

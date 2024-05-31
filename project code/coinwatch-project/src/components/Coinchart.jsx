@@ -5,7 +5,7 @@ import {useParams} from "react-router-dom";
 import axios from "axios";
 import {SingleCoin} from "../config/api.jsx";
 
-function Coinchart({ darkMode }) {
+export function Coinchart({ darkMode }) {
 
 
     const { id } = useParams();
@@ -57,4 +57,4 @@ function Coinchart({ darkMode }) {
     );
 }
 
-export default Coinchart;
+
