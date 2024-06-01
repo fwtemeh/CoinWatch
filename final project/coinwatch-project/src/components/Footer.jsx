@@ -20,7 +20,7 @@ function Footer ({darkMode})  {
                 <footer className="copy-right text-center p-2">
 
 
-                    <a href="/AboutUs.html">
+                    <a target='_blank' href="/AboutUs.html">
                         <p>Made with ❤️</p>
 
                     </a>
