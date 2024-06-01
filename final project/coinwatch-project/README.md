@@ -1,6 +1,6 @@
 # Step 1:
  - check  your destination
- - should be like "...\CoinWatch\project code\coinwatch-project>"
+ - should be like "...\final project\coinwatch-project>"
 
 # Step 2:
  - then   "npm install"
