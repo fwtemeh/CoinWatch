@@ -63,15 +63,21 @@ export const SearchBar = ({ currency ,darkMode}) => {
                         ) : (
                             coins.map((coin) => (
 
-                                <li key={coin.id}  className="list-group-item d-flex align-items-center" style={{borderRadius:'10px'}}>
+                                <li key={coin.id} className="list-group-item-wrapper">
+                                    <Link to={`/coins/${coin.id}`} className="list-group-item d-flex align-items-center" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                        <img src={coin.thumb} alt={coin.name} className="me-2" style={{ width: '20px', height: '20px' }} />
+                                        {coin.name}
+                                    </Link>
+                                </li>
+                                /*<li key={coin.id}  className="list-group-item d-flex align-items-center" style={{borderRadius:'10px'}}>
                                     <Link to={`/coins/${coin.id}`}
                                           style={{ textDecoration: 'none', color: 'inherit' }}>
                                     <img src={coin.thumb} alt={coin.name} className="me-2"
                                          style={{ width: '20px', height: '20px' }} />
 
                                         {coin.name}
-                                    </Link>
-                                </li>
+                                    </Link>*/
+
                             ))
                         )}
                     </ul>
