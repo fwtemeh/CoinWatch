@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "react-sparklines": "^1.7.0",
+    "react-spinners": "^0.13.8",
     "react-ts-tradingview-widgets": "^1.2.5"
   },
   "devDependencies": {

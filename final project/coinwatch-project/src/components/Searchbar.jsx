@@ -80,3 +80,4 @@ export const SearchBar = ({ currency ,darkMode}) => {
         </section>
     );
 };
+
