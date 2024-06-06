@@ -39,7 +39,7 @@ export const SearchBar = ({ currency ,darkMode}) => {
 
     return (
         <section id="search-bar" className={`position-relative ${darkMode ? 'dark-mode' : ''}`}>
-            <div className="container-fluid">
+            <div className="container-fluid ">
 
                 <div className="input-group rounded-3">
                     <input
@@ -59,12 +59,12 @@ export const SearchBar = ({ currency ,darkMode}) => {
                     <ul className="list-group position-absolute  mt-2   "
                         style={{ maxHeight: '200px', overflowY: 'auto' ,width:'450px'}}>
                         {noResults ? (
-                            <li className="list-group-item">Coin does not exist</li>
+                            <li className="list-group-item ">Coin does not exist</li>
                         ) : (
                             coins.map((coin) => (
 
-                                <li key={coin.id} className="list-group-item-wrapper">
-                                    <Link to={`/coins/${coin.id}`} className="list-group-item d-flex align-items-center" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <li key={coin.id} className="list-group-item-wrapper ">
+                                    <Link to={`/coins/${coin.id}`} className="list-group-item d-flex align-items-center " style={{ textDecoration: 'none'}}>
                                         <img src={coin.thumb} alt={coin.name} className="me-2" style={{ width: '20px', height: '20px' }} />
                                         {coin.name}
                                     </Link>
