@@ -259,7 +259,7 @@ export const Coinpage = ({ darkMode }) => {
 
     return (
         <div className={`coin-page ${darkMode ? "dark-mode" : ""}`}>
-            <section id="coin-overview" className="mb-5"  style={{height:'600px'}}>
+            <section id="coin-overview" className="mb-5"  style={{height:'550px'}}>
                 <div className="container-fluid">
                     <div className="section-header text-start text-uppercase mb-3">
                         <h2>Coin Overview</h2>
@@ -330,7 +330,7 @@ export const Coinpage = ({ darkMode }) => {
                 </div>
             </section>
 
-            <section id="coin-metrics" className="mb-5" style={{height:'250px'}}>
+            <section id="coin-metrics" className="mb-5" style={{height:'250px',paddingTop:'32px' }}>
                 <div className="container-fluid">
                     <div className="section-header text-start text-uppercase mb-3">
                         <h2>Coin Metrics</h2>
@@ -366,11 +366,11 @@ export const Coinpage = ({ darkMode }) => {
                 </div>
             </section>
 
-            <section id="calculator" className="mb-5" style={{height:'150px'}}>
+            <section id="calculator" className="mb-5" style={{height:'150px',paddingTop:'32px'}}>
                 <Calculator />
             </section>
 
-            <section id="coin-news" className="mb-5">
+            <section id="coin-news" className="mb-5" style={{paddingTop:'32px'}}>
                 <div className="container-fluid">
                     <div className="section-header text-start text-uppercase mb-3">
                         <h2>Crypto News</h2>
